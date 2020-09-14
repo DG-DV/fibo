@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30320.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciService", "FibonacciService\FibonacciService.csproj", "{BBF11E7F-646C-490C-8C0B-B437CE417A3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciConsoleApp", "FibonacciConsoleApp\FibonacciConsoleApp.csproj", "{44ABCD6E-D43E-4F75-AC4C-58B21BB5E65F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E} = {BBF11E7F-646C-490C-8C0B-B437CE417A3E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciWindowsFormsApp", "FibonacciWindowsFormsApp\FibonacciWindowsFormsApp.csproj", "{5AF18371-5042-402A-ADC1-7F40230DCC18}"
+	ProjectSection(ProjectDependencies) = postProject
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E} = {BBF11E7F-646C-490C-8C0B-B437CE417A3E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciClassLibrary", "FibonacciClassLibrary\FibonacciClassLibrary.csproj", "{56ABF842-B942-4B38-A086-1DDB74D4F1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FibonacciUnitTestProject", "FibonacciUnitTestProject\FibonacciUnitTestProject.csproj", "{F2DEA9FC-2BF8-4439-9B36-0447D4700146}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{193FA79E-F7F4-4BEF-961A-0C7EA7393135}"
+	ProjectSection(SolutionItems) = preProject
+		Info.readme = Info.readme
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF11E7F-646C-490C-8C0B-B437CE417A3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{44ABCD6E-D43E-4F75-AC4C-58B21BB5E65F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{44ABCD6E-D43E-4F75-AC4C-58B21BB5E65F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{44ABCD6E-D43E-4F75-AC4C-58B21BB5E65F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{44ABCD6E-D43E-4F75-AC4C-58B21BB5E65F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AF18371-5042-402A-ADC1-7F40230DCC18}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AF18371-5042-402A-ADC1-7F40230DCC18}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AF18371-5042-402A-ADC1-7F40230DCC18}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AF18371-5042-402A-ADC1-7F40230DCC18}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56ABF842-B942-4B38-A086-1DDB74D4F1A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56ABF842-B942-4B38-A086-1DDB74D4F1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56ABF842-B942-4B38-A086-1DDB74D4F1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56ABF842-B942-4B38-A086-1DDB74D4F1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DEA9FC-2BF8-4439-9B36-0447D4700146}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DEA9FC-2BF8-4439-9B36-0447D4700146}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DEA9FC-2BF8-4439-9B36-0447D4700146}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DEA9FC-2BF8-4439-9B36-0447D4700146}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {079B82B5-8EEC-442C-9188-C25C64A2AC0B}
+	EndGlobalSection
+EndGlobal

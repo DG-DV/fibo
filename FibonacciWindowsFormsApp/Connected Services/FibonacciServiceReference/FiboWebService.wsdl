@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="fibonacci2switch">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fibonacci2switchResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fibonacci2switchResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fibonnacci1">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fibonnacci1Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Fibonnacci1Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fibonacci2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="fibonacci2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="fibonacci2Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fibonnacci3">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Fibonnacci3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="Fibonnacci3Result" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFibo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFiboResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFiboResult" type="tns:ArrayOfInt" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfInt">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Fibonacci">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="n" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FibonacciResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FibonacciResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlToJson">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="xml" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="XmlToJsonResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="XmlToJsonResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="fibonacci2switchSoapIn">
+    <wsdl:part name="parameters" element="tns:fibonacci2switch" />
+  </wsdl:message>
+  <wsdl:message name="fibonacci2switchSoapOut">
+    <wsdl:part name="parameters" element="tns:fibonacci2switchResponse" />
+  </wsdl:message>
+  <wsdl:message name="Fibonnacci1SoapIn">
+    <wsdl:part name="parameters" element="tns:Fibonnacci1" />
+  </wsdl:message>
+  <wsdl:message name="Fibonnacci1SoapOut">
+    <wsdl:part name="parameters" element="tns:Fibonnacci1Response" />
+  </wsdl:message>
+  <wsdl:message name="fibonacci2SoapIn">
+    <wsdl:part name="parameters" element="tns:fibonacci2" />
+  </wsdl:message>
+  <wsdl:message name="fibonacci2SoapOut">
+    <wsdl:part name="parameters" element="tns:fibonacci2Response" />
+  </wsdl:message>
+  <wsdl:message name="Fibonnacci3SoapIn">
+    <wsdl:part name="parameters" element="tns:Fibonnacci3" />
+  </wsdl:message>
+  <wsdl:message name="Fibonnacci3SoapOut">
+    <wsdl:part name="parameters" element="tns:Fibonnacci3Response" />
+  </wsdl:message>
+  <wsdl:message name="GetFiboSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFibo" />
+  </wsdl:message>
+  <wsdl:message name="GetFiboSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFiboResponse" />
+  </wsdl:message>
+  <wsdl:message name="FibonacciSoapIn">
+    <wsdl:part name="parameters" element="tns:Fibonacci" />
+  </wsdl:message>
+  <wsdl:message name="FibonacciSoapOut">
+    <wsdl:part name="parameters" element="tns:FibonacciResponse" />
+  </wsdl:message>
+  <wsdl:message name="XmlToJsonSoapIn">
+    <wsdl:part name="parameters" element="tns:XmlToJson" />
+  </wsdl:message>
+  <wsdl:message name="XmlToJsonSoapOut">
+    <wsdl:part name="parameters" element="tns:XmlToJsonResponse" />
+  </wsdl:message>
+  <wsdl:portType name="FiboWebServiceSoap">
+    <wsdl:operation name="fibonacci2switch">
+      <wsdl:input message="tns:fibonacci2switchSoapIn" />
+      <wsdl:output message="tns:fibonacci2switchSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci1">
+      <wsdl:input message="tns:Fibonnacci1SoapIn" />
+      <wsdl:output message="tns:Fibonnacci1SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="fibonacci2">
+      <wsdl:input message="tns:fibonacci2SoapIn" />
+      <wsdl:output message="tns:fibonacci2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci3">
+      <wsdl:input message="tns:Fibonnacci3SoapIn" />
+      <wsdl:output message="tns:Fibonnacci3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFibo">
+      <wsdl:input message="tns:GetFiboSoapIn" />
+      <wsdl:output message="tns:GetFiboSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fibonacci">
+      <wsdl:input message="tns:FibonacciSoapIn" />
+      <wsdl:output message="tns:FibonacciSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="XmlToJson">
+      <wsdl:input message="tns:XmlToJsonSoapIn" />
+      <wsdl:output message="tns:XmlToJsonSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FiboWebServiceSoap" type="tns:FiboWebServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fibonacci2switch">
+      <soap:operation soapAction="http://tempuri.org/fibonacci2switch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci1">
+      <soap:operation soapAction="http://tempuri.org/Fibonnacci1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fibonacci2">
+      <soap:operation soapAction="http://tempuri.org/fibonacci2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci3">
+      <soap:operation soapAction="http://tempuri.org/Fibonnacci3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFibo">
+      <soap:operation soapAction="http://tempuri.org/GetFibo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonacci">
+      <soap:operation soapAction="http://tempuri.org/Fibonacci" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlToJson">
+      <soap:operation soapAction="http://tempuri.org/XmlToJson" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FiboWebServiceSoap12" type="tns:FiboWebServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="fibonacci2switch">
+      <soap12:operation soapAction="http://tempuri.org/fibonacci2switch" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci1">
+      <soap12:operation soapAction="http://tempuri.org/Fibonnacci1" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fibonacci2">
+      <soap12:operation soapAction="http://tempuri.org/fibonacci2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonnacci3">
+      <soap12:operation soapAction="http://tempuri.org/Fibonnacci3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFibo">
+      <soap12:operation soapAction="http://tempuri.org/GetFibo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fibonacci">
+      <soap12:operation soapAction="http://tempuri.org/Fibonacci" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XmlToJson">
+      <soap12:operation soapAction="http://tempuri.org/XmlToJson" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FiboWebService">
+    <wsdl:port name="FiboWebServiceSoap" binding="tns:FiboWebServiceSoap">
+      <soap:address location="https://localhost:44392/FiboWebService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FiboWebServiceSoap12" binding="tns:FiboWebServiceSoap12">
+      <soap12:address location="https://localhost:44392/FiboWebService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

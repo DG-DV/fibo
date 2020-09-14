@@ -1,0 +1,44 @@
+1 - Démarrer les web services
+	-dans l'explorateur de solution cliquer avec le bouton droit sur le projet FibonacciService
+	-cliquer sur débugger
+	-cliquer sur "Démarrer nouvelle instance"
+
+	Enfin dans le Menu du haut cliquer sur déboguer puis sur "Détachez tout"
+
+2 - Une fois les web services en exécution 
+
+A - Sélectionner le projet Console "FiboncciConsoleApp" dans l’explorateur de solutions avec le bouton droit
+	-cliquer sur débugger
+	-cliquer sur "Démarrer nouvelle instance"
+Et tester le calcul de la suite de Fibonnacci
+Un 1er test est réalisé automatiquement pour le nombre 10.
+Une fois réalisé possibilité d'en saisir un autre et de valider pour vérifier le résultat suite à appel du web service ou de choisir la lettre "q" pour quitter.
+
+B - Sélectionner le projet Winforms "FibonacciWindowsFormsApp" dans l’explorateur de solutions avec le bouton droit
+	-cliquer sur débugger
+	-cliquer sur "Démarrer nouvelle instance"
+Tester le calcul de la suite de Fibonnacci directement avec la valeur 10 en cliquant sur le bouton "Compute Fibonancci(10)"
+Tester le calcul de la suite de Fibonnacci en saisissant sa propre valeur dans la textbox suivant le libellé "Your Number" puis en cliquant sur le bouton "Compute Fibonaccci for your number"
+Tester la conversion dynamique d'un fichier XML vers un fichier Json en insérant le code XML dans la textbox "Put XML" et en cliquant sur le bouton "XML TO JSON". Utilisation de expandoObject pour gérer le tout dynamiquement ainsi que de NewtonSoft Json acouplé à un jsonConverter (ici un ExpandoObjectConverter) afin de gérer les valeurs null que l’on souhaitait supprimer le plus directement possible.
+Une fenêtre modale apparaitra et se fermera automatiquement de par l'usage d'un Action Worker à la création de la form et le résultat du web service sera retourné via MessageBox.
+A la validation du message le résultat sera mis à jour dans un composant web browser.
+
+C – Le projet de test FibonacciUnitTestProject permet de vérifier le bon fonctionnement des web services
+Il suffit de cliquer sur le menu du haut sur « Test » puis sur « Exécuter tous les tests » afin de permettre le bon déroulement des tests ou de faire bouton droit dans l'explorateur de projets puis "Exécuter tous les tests".
+
+
+
+Sources d'inspirations :
+
+Expando Converter
+https://stackoverflow.com/questions/42863644/ignore-expandoobject-properties-with-json-net-serializer-settings
+
+Wait form Dialog with Action Worker
+https://youtube.com/watch?v=yZYAaScEsc0
+
+Log4net
+https://csharp.today/log4net-tutorial-great-library-for-logging
+
+Unit test
+https://www.youtube.com/watch?v=ub3P8c87cwk
+
